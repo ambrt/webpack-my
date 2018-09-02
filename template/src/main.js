@@ -27,7 +27,7 @@ Vue.directive('false', {
 })
 Vue.prototype.$elastic = esclient
 Vue.config.productionTip = false
-
+Vue.use(Buefy)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
