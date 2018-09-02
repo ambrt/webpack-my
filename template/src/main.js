@@ -7,7 +7,25 @@ import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
+import Buefy from 'buefy'
+import 'buefy/lib/buefy.css'
+var elasticsearch = require('elasticsearch')
+var esclient = new elasticsearch.Client({
+  host: 'localhost:9200',
+  log: 'trace'
+})
+Vue.directive('false', {
+  // When the bound element is inserted into the DOM...
+  inserted: function (el, binding, vnode) {
+    // Focus the element
+    el.style.display = 'none'
 
+    // el.remove()
+    // vnode.context // vm
+    // el.parentElement.removeChild(el)
+  }
+})
+Vue.prototype.$elastic = esclient
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
