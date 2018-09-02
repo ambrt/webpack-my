@@ -31,7 +31,7 @@
     "debounce": "^1.2.0",
     "elasticsearch": "^15.1.1",
     "vue": "^2.5.2",
-    {{#router}},
+    {{#router}}
     "vue-router": "^3.0.1"{{/router}}
   },
   "devDependencies": {
