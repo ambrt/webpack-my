@@ -1,5 +1,5 @@
 {
-  "window.title": "client",
+  "window.title": "{{ name }}",
   "files.exclude": {
     "node_modules": true,
     "client/node_modules": true
